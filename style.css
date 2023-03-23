@@ -1,0 +1,26 @@
+.heart {
+  width: 250px;
+  padding: 0;
+  margin: 0 auto;
+  transform-name: heart;
+  transform-origin: center;
+  transform: scale(1.05);
+  transition-property: transform;
+}
+
+.heart img {
+  width: 100%;
+}
+
+@keyframes heart {
+  from {transform: scale(1.05);}
+  to {transform: scale(1.5);}
+}
+
+.heart:hover{
+  transform: scale(1.5);
+  animation-duration: 0.1s;
+  animation-name: heart;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
